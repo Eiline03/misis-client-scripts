@@ -1,0 +1,121 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f5f9;
+    color: #333;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #253858;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #253858;
+    margin-top: 35px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Кнопки */
+button {
+    background-color: #4169e1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 18px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3154bd;
+}
+
+button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4169e1;
+}
+
+#message {
+    color: #555;
+    font-size: 14px;
+    margin-top: 15px;
+    min-height: 20px;
+}
+
+#users {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.user {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.user:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.user h3 {
+    color: #253858;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.user p {
+    color: #555;
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+.user button {
+    margin-top: 12px;
+    padding: 9px 12px;
+}
+
+#posts {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 600px) {
+    #users {
+        grid-template-columns: 1fr;
+    }
+}
