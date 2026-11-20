@@ -1,4 +1,5 @@
-name: Deploy lab_03 to GitHub Pages
+
+name: Deploy labs to GitHub Pages
 
 on:
   push:
@@ -20,6 +21,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,10 +29,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload lab_03 as Pages artifact
+      - name: Upload labs as Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./lab_03
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment
